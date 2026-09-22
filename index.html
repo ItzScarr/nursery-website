@@ -11,7 +11,6 @@
       --yellow: #ffe23b;
       --cyan: #20b6c5;
       --pink: #f45da7;
-      --blue: #258fd1;
       --ink: #202747;
       --cream: #fffdf7;
     }
@@ -37,7 +36,12 @@
       font-size: .9rem;
       font-weight: bold;
     }
-    .top .wrap { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    .top .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
     .top a { text-decoration: none; }
 
     header {
@@ -99,8 +103,12 @@
       text-decoration: none;
       cursor: pointer;
     }
-    .button:hover { transform: translate(2px, 2px); box-shadow: 2px 3px 0 var(--ink); }
-    .button.yellow { background: var(--yellow); }
+    .button:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 3px 0 var(--ink);
+    }
+    .button.white { background: white; }
+    .button.white:hover { background: #e9f9fb; }
 
     section { padding: 85px 0; }
     h1, h2, h3 { line-height: 1.1; }
@@ -137,7 +145,12 @@
       min-height: 540px;
     }
     .hero p { max-width: 570px; font-size: 1.18rem; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 28px;
+    }
     .hero-photo {
       overflow: hidden;
       aspect-ratio: 1;
@@ -145,7 +158,11 @@
       border-radius: 46% 49% 43% 42%;
       box-shadow: 17px 17px var(--cyan);
     }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     .facts { background: var(--cyan); padding: 24px 0; }
     .fact-grid {
@@ -154,7 +171,11 @@
       gap: 20px;
       text-align: center;
     }
-    .fact-grid strong { display: block; font-size: 1.5rem; line-height: 1.25; }
+    .fact-grid strong {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1.25;
+    }
 
     .about-grid {
       display: grid;
@@ -167,16 +188,29 @@
       overflow: hidden;
       box-shadow: 15px 15px var(--yellow);
     }
-    .about-photo img { width: 100%; min-height: 340px; object-fit: cover; }
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
     .values { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
-    .values span { padding: 8px 15px; border-radius: 30px; font-weight: bold; background: var(--yellow); }
+    .values span {
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-weight: bold;
+      background: var(--yellow);
+    }
     .values span:nth-child(2) { background: #55c5eb; }
     .values span:nth-child(3) { background: #f89bc8; }
     .values span:nth-child(4) { background: #fb8189; }
     .values span:nth-child(5) { background: #83d7aa; }
 
     .locations { background: #e8f9fa; }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 23px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -204,18 +238,46 @@
       font-size: .94rem;
     }
     .card .details strong { display: block; }
-    .card .details a { color: #006d82; font-weight: bold; overflow-wrap: anywhere; }
+    .card .details a {
+      color: #006d82;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
 
-    .care-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .care-box { padding: 27px; border-radius: 23px; background: #fff3bf; border-bottom: 7px solid var(--yellow); }
-    .care-box:nth-child(2) { background: #e2f8fb; border-color: var(--cyan); }
-    .care-box:nth-child(3) { background: #ffe5f1; border-color: var(--pink); }
+    .care-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .care-box {
+      padding: 27px;
+      border-radius: 23px;
+      background: #fff3bf;
+      border-bottom: 7px solid var(--yellow);
+    }
+    .care-box:nth-child(2) {
+      background: #e2f8fb;
+      border-color: var(--cyan);
+    }
+    .care-box:nth-child(3) {
+      background: #ffe5f1;
+      border-color: var(--pink);
+    }
     .care-box .icon { font-size: 2rem; margin-bottom: 12px; }
 
     .day { background: var(--cyan); }
-    .day-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 55px; }
+    .day-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
     .steps { display: grid; gap: 12px; }
-    .step { padding: 15px 18px; border-radius: 15px; background: white; }
+    .step {
+      padding: 15px 18px;
+      border-radius: 15px;
+      background: white;
+    }
     .step strong { display: block; color: #006d80; }
     .day-highlight {
       padding: 40px;
@@ -224,13 +286,25 @@
       background: var(--yellow);
       transform: rotate(-2deg);
     }
-    .day-highlight strong { display: block; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.1; }
+    .day-highlight strong {
+      display: block;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+    }
 
     .visit { background: var(--yellow); text-align: center; }
     .visit p { max-width: 650px; margin: 0 auto 25px; }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+    }
     .contact-list { display: grid; gap: 15px; }
-    .contact-item { padding: 17px 19px; border-radius: 15px; background: #e8f8f9; }
+    .contact-item {
+      padding: 17px 19px;
+      border-radius: 15px;
+      background: #e8f8f9;
+    }
     .contact-item strong { display: block; }
     .contact-item a { color: #006c80; overflow-wrap: anywhere; }
 
@@ -256,7 +330,12 @@
 
     footer { padding: 45px 0; background: var(--ink); color: white; }
     footer a { color: white; }
-    .footer-grid { display: flex; justify-content: space-between; gap: 35px; flex-wrap: wrap; }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
     footer p { max-width: 470px; }
 
     @media (max-width: 900px) {
@@ -274,8 +353,13 @@
       }
       nav.open { display: flex; }
       .menu { display: block; }
-      .hero-grid, .about-grid, .day-grid, .contact-grid { grid-template-columns: 1fr; }
-      .hero-photo { width: min(480px, 85%); margin: 0 auto 25px; }
+      .hero-grid, .about-grid, .day-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-photo {
+        width: min(480px, 85%);
+        margin: 0 auto 25px;
+      }
       .cards, .care-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
@@ -336,13 +420,14 @@
           <p>Flexible, nurturing childcare for children from three months upwards, with welcoming nurseries in Margate, Cliftonville and Ramsgate.</p>
           <div class="hero-actions">
             <a class="button" href="#locations">Find your nursery</a>
-            <a class="button yellow" href="#contact">Arrange a visit</a>
+            <a class="button white" href="#contact">Arrange a visit</a>
           </div>
         </div>
 
-        <!-- This brochure photo is embedded directly in the HTML. -->
         <div class="hero-photo">
-          <img alt="Children playing outdoors" src="data:image/webp;base64,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">
+          <img
+            src="https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?auto=format&fit=crop&w=1600&q=85"
+            alt="Children playing with toys in a preschool setting">
         </div>
       </div>
     </section>
@@ -358,16 +443,24 @@
     <section id="about">
       <div class="wrap about-grid">
         <div class="about-photo">
-          <img alt="Children enjoying outdoor play" src="data:image/webp;base64,UklGRlYDAABXRUJQVlA4IEoDAABQFgCdASqgAEIAPzmMulUvKbMxrNZsimAnCWYAxfzRlIhtHuXlX4/CBfVG9ASkwOye+BM2qhWfmeGTYrehvjwg9D1JyNlmbjBNN48+lge5VyAwm0JrIsO2GCqsgBahTskigzaIh/705KLfw2q+V13lexBbdr/GCeIZ1jkDUSYggriwNiG9ap9CkSh77pXknbe40hKpaudUCvDijzP7gprolDuJESa8SgevNhtoh2saaTiD4X2X5kMV13oAAP7thAY9wVuFpzXYpesOkkW4yoj73n0UlfFK7bZ2EchnOcz7eSHsGrkrPe/fqNu60f7QOscrUS7ecpokjIiGt+RMTmsdpyLO43jfGq6CBfW99JuowqLZon0nWZau4nXG+/7J2axpuCdqimPJ/q3FWUUp+q5i10PkMD9Lxb9R7G2BTCIA6VeLBkNba5i5kKSVTP3FNyQQ95z/xaK7is0bPjhc+3RoCdyNV9w4t3XgpGl/c0hpbt8StUn3vbodnqnxyb/hMbQ9LJ7uAjZxNt4+g9yeNeJyR23SDDNwHjbsPoGnzmim2T+HkGLZ7mnEQpMEXErSe4YCF6Aa85QxNsn8ZA1g401qVMrwyS/GUN4PDtPAJRYLKR7z61Mu7Td093BkmGz522OHNxbAabNZ9unIckrBsz3X3PDHGjS5vQyO6PCwZ80TRffWCU0WnDk56KoKs79CAZYzVP+xYWeavJ+6KQxsn5SQXdabTeL9A0xmQtKpzBOdZeFyXh+l7xaG5sqFLcdbL2s8+vrXGvk9tYABLfYFHo0NrmCAojoLuPtdZMQjDi57tsqNnxIOU1P9k3xeBWE7KNDxU41UnLhEdZ71Nn0xrkum1MydQ1gt+2UPdQCnHQJ6N9W8v0RoWk6xc5BQ+LXxtK1cufVkJozOcyz5q1hNZLzq2MxX2VjzNaXobN6wEMF7FQgpM/+TT31mqLbJrn5dkph6DbWxanWv0SRYywGIUpi45npiLaKeUMy+B3vNYhlwz50KriXlkP70wuHzlyNiMk2hsHDV2frG8DNam7+3uOQsaN8Kxi+DFiYs4Y4we66RBvQmlGdmKHomQ726yZ8946zcTz2nk7QSrRI37eXnFDwuECp96rG1274wAA==">
+          <img
+            src="https://images.unsplash.com/photo-1581861181562-34284733005a?auto=format&fit=crop&w=1600&q=85"
+            alt="Children playing together at preschool"
+            loading="lazy">
         </div>
+
         <div>
           <span class="kicker">A bright start for every child</span>
           <h2>Care built around your child.</h2>
           <p class="lead">Brightstart Nurseries began in 2012 with a simple aim: give children a safe, stimulating place to grow and families the confidence to feel at home.</p>
           <p>We encourage independence and self-assurance through play, exploration and supportive relationships. Each child has a dedicated key person who learns about their interests, follows their development and works closely with their family.</p>
+
           <div class="values" aria-label="Our values">
-            <span>Nurturing</span><span>Inclusion</span><span>Education</span>
-            <span>Family</span><span>Excellence</span>
+            <span>Nurturing</span>
+            <span>Inclusion</span>
+            <span>Education</span>
+            <span>Family</span>
+            <span>Excellence</span>
           </div>
         </div>
       </div>
@@ -439,11 +532,13 @@
             <h3>A person who knows your child</h3>
             <p>A dedicated key person helps each child settle, plans around their interests and shares milestones with families. A buddy provides continuity of care.</p>
           </article>
+
           <article class="care-box">
             <div class="icon" aria-hidden="true">🌿</div>
             <h3>Play inside and out</h3>
             <p>Child-led play, creative activities and outdoor experiences support learning, confidence, physical development and friendships.</p>
           </article>
+
           <article class="care-box">
             <div class="icon" aria-hidden="true">🥕</div>
             <h3>Food made on site</h3>
@@ -459,6 +554,7 @@
           <span class="kicker">Nursery life</span>
           <h2>Room for routine. Room for discovery.</h2>
           <p>Days are structured from arrival to home time, with flexibility to follow children's changing needs, interests and individual sleep routines.</p>
+
           <div class="steps">
             <div class="step"><strong>Welcome and breakfast</strong>Arrival, self-registration and child-led play.</div>
             <div class="step"><strong>Explore and learn</strong>Circle time, music, guided activities, stories and outdoor play.</div>
@@ -466,6 +562,7 @@
             <div class="step"><strong>Afternoon adventures</strong>More play, movement and learning before tea and home time.</div>
           </div>
         </div>
+
         <div class="day-highlight">
           <strong>Learning meets play and every moment counts.</strong>
           <p style="margin-top:18px">Every child's day combines familiar routines with time to explore.</p>
