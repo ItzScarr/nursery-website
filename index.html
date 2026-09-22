@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta
     name="description"
-    content="Little Oaks Nursery provides warm, nurturing and inspiring childcare in a safe environment where children can learn, explore and grow."
-  />
+    content="Little Oaks Nurseries provides warm, nurturing and inspiring childcare where children can learn, play and grow."
+  >
 
-  <title>Little Oaks Nursery | Learn, Play & Grow</title>
+  <title>Little Oaks Nurseries | Learn, Play & Grow</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
@@ -36,8 +40,7 @@
       --white: #ffffff;
       --border: rgba(47, 100, 72, 0.12);
 
-      --shadow:
-        0 15px 50px rgba(34, 60, 45, 0.09);
+      --shadow: 0 15px 50px rgba(34, 60, 45, 0.09);
 
       --radius-sm: 14px;
       --radius-md: 22px;
@@ -94,25 +97,9 @@
       margin-inline: auto;
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 13px;
-      border-radius: 999px;
-      background: var(--green-light);
-      color: var(--green-dark);
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--green);
+    section {
+      padding: 100px 0;
+      scroll-margin-top: 90px;
     }
 
     h1,
@@ -141,8 +128,25 @@
       color: var(--muted);
     }
 
-    section {
-      padding: 100px 0;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
     }
 
     .section-heading {
@@ -170,16 +174,22 @@
       margin-inline: auto;
     }
 
+    /* BUTTONS */
+
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 9px;
+
       min-height: 52px;
       padding: 0 22px;
+
       border-radius: 999px;
+
       cursor: pointer;
       font-weight: 700;
+
       transition:
         transform 0.2s ease,
         background 0.2s ease,
@@ -212,9 +222,7 @@
       color: var(--green-dark);
     }
 
-    /* -----------------------------------------
-       Top bar
-    ----------------------------------------- */
+    /* TOP BAR */
 
     .topbar {
       background: var(--green-dark);
@@ -224,9 +232,11 @@
 
     .topbar-inner {
       min-height: 39px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 20px;
     }
 
@@ -241,34 +251,38 @@
       gap: 24px;
     }
 
-    /* -----------------------------------------
-       Navigation
-    ----------------------------------------- */
+    /* NAVIGATION */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
+
       background: rgba(251, 248, 241, 0.93);
       backdrop-filter: blur(16px);
+
       border-bottom: 1px solid rgba(47, 100, 72, 0.08);
     }
 
     .navbar {
       min-height: 82px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px;
+
+      gap: 22px;
     }
 
     .logo {
       display: flex;
       align-items: center;
       gap: 11px;
+
       font-family: "Nunito", sans-serif;
       font-weight: 800;
       font-size: 1.25rem;
+
       color: var(--green-dark);
       white-space: nowrap;
     }
@@ -276,11 +290,15 @@
     .logo-icon {
       width: 43px;
       height: 43px;
+
       background: var(--green-dark);
       color: white;
+
       border-radius: 15px;
+
       display: grid;
       place-items: center;
+
       transform: rotate(-4deg);
     }
 
@@ -291,15 +309,18 @@
 
     nav ul {
       list-style: none;
+
       display: flex;
       align-items: center;
-      gap: 28px;
+
+      gap: 22px;
     }
 
     nav a {
-      font-size: 0.94rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #536158;
+
       transition: color 0.2s ease;
     }
 
@@ -310,57 +331,71 @@
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .mobile-menu-btn {
       display: none;
+
       width: 44px;
       height: 44px;
+
       border-radius: 12px;
       background: white;
+
       cursor: pointer;
+
       font-size: 1.4rem;
       color: var(--green-dark);
     }
 
-    /* -----------------------------------------
-       Hero
-    ----------------------------------------- */
+    /* HERO */
 
     .hero {
       padding: 75px 0 95px;
+
       position: relative;
       overflow: hidden;
     }
 
     .hero::before {
       content: "";
+
       position: absolute;
+
       width: 420px;
       height: 420px;
+
       background: var(--yellow-light);
       border-radius: 50%;
+
       left: -230px;
       top: 50px;
+
       z-index: -1;
     }
 
     .hero::after {
       content: "";
+
       position: absolute;
+
       width: 340px;
       height: 340px;
+
       background: var(--green-light);
       border-radius: 50%;
+
       right: -180px;
       bottom: -120px;
+
       z-index: -1;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.02fr 0.98fr;
+
       gap: 80px;
       align-items: center;
     }
@@ -372,12 +407,14 @@
 
     .hero-content h1 span {
       color: var(--green);
+
       position: relative;
       display: inline-block;
     }
 
     .hero-content > p {
       max-width: 600px;
+
       font-size: 1.12rem;
       line-height: 1.8;
     }
@@ -385,6 +422,7 @@
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
+
       gap: 13px;
       margin-top: 30px;
     }
@@ -392,6 +430,7 @@
     .hero-trust {
       display: flex;
       align-items: center;
+
       gap: 15px;
       margin-top: 37px;
     }
@@ -403,11 +442,15 @@
     .avatar {
       width: 39px;
       height: 39px;
+
       border-radius: 50%;
       margin-left: -9px;
+
       border: 3px solid var(--cream);
+
       display: grid;
       place-items: center;
+
       font-size: 1rem;
       background: white;
     }
@@ -439,11 +482,18 @@
     .hero-image-main {
       position: absolute;
       inset: 0 35px 50px 0;
+
       border-radius: 60px 60px 150px 60px;
+
       overflow: hidden;
+
       box-shadow: var(--shadow);
+
       background:
-        linear-gradient(rgba(39, 83, 58, 0.08), rgba(39, 83, 58, 0.08)),
+        linear-gradient(
+          rgba(39, 83, 58, 0.08),
+          rgba(39, 83, 58, 0.08)
+        ),
         url("https://images.unsplash.com/photo-1602030028438-4cf153cbae9e?auto=format&fit=crop&w=1200&q=85")
         center / cover;
     }
@@ -451,24 +501,30 @@
     .hero-card {
       position: absolute;
       z-index: 3;
+
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
+
       border-radius: 20px;
       padding: 16px 18px;
+
       box-shadow: 0 13px 35px rgba(37, 55, 44, 0.14);
     }
 
     .hero-card-top {
       top: 28px;
       right: 0;
+
       display: flex;
       align-items: center;
+
       gap: 12px;
     }
 
     .hero-card-bottom {
       bottom: 25px;
       left: -20px;
+
       width: 225px;
     }
 
@@ -476,10 +532,14 @@
       min-width: 43px;
       width: 43px;
       height: 43px;
+
       border-radius: 14px;
+
       display: grid;
       place-items: center;
+
       background: var(--green-light);
+
       font-size: 1.25rem;
     }
 
@@ -493,9 +553,7 @@
       margin-top: 2px;
     }
 
-    /* -----------------------------------------
-       Trust strip
-    ----------------------------------------- */
+    /* TRUST STRIP */
 
     .trust-strip {
       padding: 0 0 30px;
@@ -503,9 +561,12 @@
 
     .trust-grid {
       background: white;
+
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow);
+
       padding: 24px 30px;
+
       display: grid;
       grid-template-columns: repeat(4, 1fr);
     }
@@ -514,8 +575,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       gap: 12px;
       padding: 12px 20px;
+
       border-right: 1px solid var(--border);
     }
 
@@ -529,6 +592,7 @@
 
     .trust-item strong {
       display: block;
+
       font-family: "Nunito", sans-serif;
       color: var(--green-dark);
     }
@@ -537,9 +601,7 @@
       color: var(--muted);
     }
 
-    /* -----------------------------------------
-       About
-    ----------------------------------------- */
+    /* ABOUT */
 
     .about {
       background: white;
@@ -548,6 +610,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
+
       gap: 75px;
       align-items: center;
     }
@@ -559,12 +622,16 @@
 
     .about-main-img {
       position: absolute;
+
       left: 0;
       top: 0;
+
       width: 77%;
       height: 470px;
+
       border-radius: 36px;
       overflow: hidden;
+
       background:
         url("https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=1000&q=85")
         center / cover;
@@ -572,13 +639,18 @@
 
     .about-small-img {
       position: absolute;
+
       right: 0;
       bottom: 0;
+
       width: 49%;
       height: 300px;
+
       border-radius: 30px;
       border: 10px solid white;
+
       overflow: hidden;
+
       background:
         url("https://images.unsplash.com/photo-1599443015574-be5fe8a05783?auto=format&fit=crop&w=700&q=85")
         center / cover;
@@ -586,19 +658,29 @@
 
     .about-badge {
       position: absolute;
+
       left: -15px;
       bottom: 30px;
+
       width: 140px;
       height: 140px;
+
       border-radius: 50%;
+
       background: var(--yellow);
+
       display: grid;
       place-items: center;
+
       text-align: center;
+
       font-family: "Nunito", sans-serif;
       font-weight: 800;
+
       transform: rotate(-8deg);
+
       padding: 20px;
+
       box-shadow: var(--shadow);
     }
 
@@ -613,12 +695,14 @@
 
     .check-list {
       display: grid;
+
       gap: 16px;
       margin: 28px 0 32px;
     }
 
     .check-item {
       display: flex;
+
       gap: 13px;
       align-items: flex-start;
     }
@@ -627,11 +711,15 @@
       min-width: 25px;
       width: 25px;
       height: 25px;
+
       border-radius: 50%;
+
       background: var(--green-light);
       color: var(--green-dark);
+
       display: grid;
       place-items: center;
+
       font-weight: 800;
       font-size: 0.8rem;
     }
@@ -645,103 +733,185 @@
       font-size: 0.91rem;
     }
 
-    /* -----------------------------------------
-       Rooms
-    ----------------------------------------- */
+    /* OUR NURSERIES */
 
-    .rooms {
+    .nurseries {
       background: var(--cream);
     }
 
-    .room-grid {
+    .nursery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+
       gap: 24px;
     }
 
-    .room-card {
+    .nursery-card {
       background: white;
+
       border-radius: var(--radius-md);
+
       overflow: hidden;
+
       border: 1px solid rgba(47, 100, 72, 0.07);
+
       transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
     }
 
-    .room-card:hover {
+    .nursery-card:hover {
       transform: translateY(-8px);
       box-shadow: var(--shadow);
     }
 
-    .room-image {
-      height: 240px;
+    .nursery-image {
+      height: 250px;
+
       overflow: hidden;
       position: relative;
     }
 
-    .room-image img {
+    .nursery-image img {
       height: 100%;
       object-fit: cover;
+
       transition: transform 0.5s ease;
     }
 
-    .room-card:hover .room-image img {
+    .nursery-card:hover .nursery-image img {
       transform: scale(1.04);
     }
 
-    .age {
+    .location-tag {
       position: absolute;
+
       left: 17px;
       bottom: 17px;
+
       padding: 8px 12px;
+
       background: white;
       color: var(--green-dark);
+
       border-radius: 999px;
+
       font-weight: 700;
       font-size: 0.82rem;
+
       box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .room-content {
+    .nursery-content {
       padding: 26px;
     }
 
-    .room-content h3 {
+    .nursery-content h3 {
       margin-bottom: 11px;
     }
 
-    .room-content p {
+    .nursery-content p {
       font-size: 0.94rem;
     }
 
-    .room-link {
+    .nursery-link {
       display: inline-flex;
       gap: 7px;
       align-items: center;
+
       color: var(--green-dark);
+
       font-weight: 700;
+
       margin-top: 18px;
     }
 
-    /* -----------------------------------------
-       Features
-    ----------------------------------------- */
+    /* FUNDING */
+
+    .funding {
+      background: white;
+    }
+
+    .funding-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 70px;
+      align-items: center;
+    }
+
+    .funding-content h2 {
+      margin: 17px 0 20px;
+    }
+
+    .funding-content > p {
+      font-size: 1.04rem;
+    }
+
+    .funding-cards {
+      display: grid;
+      gap: 17px;
+    }
+
+    .funding-card {
+      background: var(--cream);
+
+      border: 1px solid var(--border);
+      border-radius: 20px;
+
+      padding: 25px;
+
+      display: grid;
+      grid-template-columns: 52px 1fr;
+
+      gap: 17px;
+      align-items: flex-start;
+    }
+
+    .funding-icon {
+      width: 52px;
+      height: 52px;
+
+      border-radius: 16px;
+
+      background: var(--green-light);
+
+      display: grid;
+      place-items: center;
+
+      font-size: 1.4rem;
+    }
+
+    .funding-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 5px;
+    }
+
+    .funding-card p {
+      font-size: 0.89rem;
+    }
+
+    /* FEATURES */
 
     .features {
       background: var(--green-dark);
       color: white;
+
       position: relative;
       overflow: hidden;
     }
 
     .features::before {
       content: "";
+
       position: absolute;
+
       width: 350px;
       height: 350px;
+
       border: 70px solid rgba(255, 255, 255, 0.03);
       border-radius: 50%;
+
       right: -150px;
       top: -150px;
     }
@@ -766,16 +936,24 @@
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+
       gap: 20px;
     }
 
     .feature-card {
       background: rgba(255, 255, 255, 0.08);
+
       border: 1px solid rgba(255, 255, 255, 0.1);
+
       border-radius: var(--radius-md);
+
       padding: 28px 25px;
+
       backdrop-filter: blur(8px);
-      transition: background 0.2s ease, transform 0.2s ease;
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
     }
 
     .feature-card:hover {
@@ -786,18 +964,25 @@
     .feature-icon {
       width: 53px;
       height: 53px;
+
       background: var(--yellow);
       color: var(--green-dark);
+
       border-radius: 16px;
+
       display: grid;
       place-items: center;
+
       font-size: 1.45rem;
+
       margin-bottom: 22px;
     }
 
     .feature-card h3 {
       color: white;
+
       font-size: 1.15rem;
+
       margin-bottom: 10px;
     }
 
@@ -806,13 +991,79 @@
       font-size: 0.9rem;
     }
 
-    /* -----------------------------------------
-       Daily life
-    ----------------------------------------- */
+    /* STAFF */
+
+    .staff-section {
+      background: var(--cream);
+    }
+
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 24px;
+    }
+
+    .staff-card {
+      background: white;
+
+      border-radius: 24px;
+
+      overflow: hidden;
+
+      border: 1px solid rgba(47, 100, 72, 0.07);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .staff-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .staff-photo {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .staff-photo img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    .staff-content {
+      padding: 24px;
+    }
+
+    .staff-content h3 {
+      margin-bottom: 3px;
+    }
+
+    .staff-role {
+      display: block;
+
+      color: var(--green);
+
+      font-weight: 700;
+      font-size: 0.88rem;
+
+      margin-bottom: 13px;
+    }
+
+    .staff-content p {
+      font-size: 0.9rem;
+    }
+
+    /* DAY */
 
     .day-grid {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
+
       gap: 70px;
       align-items: center;
     }
@@ -823,6 +1074,7 @@
 
     .timeline {
       display: grid;
+
       gap: 8px;
       margin-top: 32px;
     }
@@ -830,9 +1082,13 @@
     .timeline-item {
       display: grid;
       grid-template-columns: 76px 1fr;
+
       gap: 20px;
+
       padding: 16px;
+
       border-radius: 17px;
+
       transition: background 0.2s ease;
     }
 
@@ -842,6 +1098,7 @@
 
     .time {
       color: var(--green-dark);
+
       font-weight: 800;
       font-size: 0.88rem;
     }
@@ -857,21 +1114,28 @@
 
     .day-image {
       min-height: 590px;
+
       border-radius: 45px;
+
       background:
         url("https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=1100&q=85")
         center / cover;
+
       position: relative;
       overflow: hidden;
     }
 
     .day-image-card {
       position: absolute;
+
       left: 25px;
       right: 25px;
       bottom: 25px;
+
       padding: 22px;
+
       border-radius: 21px;
+
       background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(12px);
     }
@@ -881,9 +1145,7 @@
       font-size: 1.1rem;
     }
 
-    /* -----------------------------------------
-       Testimonials
-    ----------------------------------------- */
+    /* TESTIMONIALS */
 
     .testimonials {
       background: #f0f5f1;
@@ -892,41 +1154,53 @@
     .testimonial-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+
       gap: 22px;
     }
 
     .testimonial {
       background: white;
+
       border-radius: var(--radius-md);
+
       padding: 30px;
+
       box-shadow: 0 9px 25px rgba(37, 65, 48, 0.05);
     }
 
     .quote-mark {
       font-family: Georgia, serif;
       font-size: 4rem;
+
       color: var(--green-light);
+
       height: 45px;
       line-height: 1;
     }
 
     .testimonial > p {
       color: #536158;
+
       margin: 12px 0 25px;
+
       line-height: 1.8;
     }
 
     .parent {
       display: flex;
       align-items: center;
+
       gap: 13px;
     }
 
     .parent-avatar {
       width: 44px;
       height: 44px;
+
       border-radius: 50%;
+
       background: var(--yellow-light);
+
       display: grid;
       place-items: center;
     }
@@ -937,13 +1211,13 @@
 
     .parent small {
       display: block;
+
       color: var(--muted);
+
       font-size: 0.78rem;
     }
 
-    /* -----------------------------------------
-       CTA
-    ----------------------------------------- */
+    /* CTA */
 
     .cta-section {
       padding: 90px 0;
@@ -952,12 +1226,18 @@
 
     .cta {
       background: var(--yellow);
+
       border-radius: 38px;
+
       padding: 62px;
+
       display: grid;
       grid-template-columns: 1fr auto;
+
       align-items: center;
+
       gap: 40px;
+
       position: relative;
       overflow: hidden;
     }
@@ -965,14 +1245,18 @@
     .cta::before,
     .cta::after {
       content: "";
+
       position: absolute;
+
       border-radius: 50%;
+
       background: rgba(255, 255, 255, 0.17);
     }
 
     .cta::before {
       width: 240px;
       height: 240px;
+
       right: 150px;
       top: -170px;
     }
@@ -980,21 +1264,27 @@
     .cta::after {
       width: 180px;
       height: 180px;
+
       left: -100px;
       bottom: -100px;
     }
 
     .cta h2 {
       font-size: clamp(2.2rem, 4vw, 3.4rem);
+
       max-width: 700px;
+
       position: relative;
       z-index: 1;
     }
 
     .cta p {
       margin-top: 14px;
+
       color: #5c543e;
+
       max-width: 620px;
+
       position: relative;
       z-index: 1;
     }
@@ -1002,18 +1292,19 @@
     .cta-buttons {
       display: flex;
       flex-direction: column;
+
       gap: 10px;
+
       position: relative;
       z-index: 1;
     }
 
-    /* -----------------------------------------
-       Contact
-    ----------------------------------------- */
+    /* CONTACT */
 
     .contact-grid {
       display: grid;
       grid-template-columns: 0.85fr 1.15fr;
+
       gap: 65px;
     }
 
@@ -1032,6 +1323,7 @@
 
     .contact-item {
       display: flex;
+
       gap: 14px;
       align-items: flex-start;
     }
@@ -1040,8 +1332,11 @@
       min-width: 43px;
       width: 43px;
       height: 43px;
+
       border-radius: 13px;
+
       background: var(--green-light);
+
       display: grid;
       place-items: center;
     }
@@ -1059,8 +1354,11 @@
 
     .contact-form {
       background: white;
+
       padding: 38px;
+
       border-radius: 28px;
+
       box-shadow: var(--shadow);
     }
 
@@ -1077,6 +1375,7 @@
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
       gap: 15px;
     }
 
@@ -1086,21 +1385,31 @@
 
     .form-group label {
       display: block;
+
       font-size: 0.83rem;
       font-weight: 700;
+
       margin-bottom: 7px;
+
       color: #45544a;
     }
 
     .form-control {
       width: 100%;
       min-height: 51px;
+
       border: 1px solid #dfe6e1;
+
       background: #fcfdfc;
+
       border-radius: 12px;
+
       padding: 12px 14px;
+
       outline: none;
+
       color: var(--text);
+
       transition:
         border 0.2s ease,
         box-shadow 0.2s ease;
@@ -1108,7 +1417,9 @@
 
     .form-control:focus {
       border-color: var(--green);
-      box-shadow: 0 0 0 4px rgba(76, 139, 103, 0.1);
+
+      box-shadow:
+        0 0 0 4px rgba(76, 139, 103, 0.1);
     }
 
     textarea.form-control {
@@ -1123,30 +1434,37 @@
 
     .success-message {
       display: none;
+
       background: var(--green-light);
       color: var(--green-dark);
+
       border-radius: 12px;
+
       padding: 13px;
+
       font-size: 0.9rem;
       font-weight: 700;
+
       margin-top: 14px;
+
       text-align: center;
     }
 
-    /* -----------------------------------------
-       Footer
-    ----------------------------------------- */
+    /* FOOTER */
 
     footer {
       background: #203d2e;
       color: white;
+
       padding-top: 70px;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1.4fr 0.7fr 0.8fr 1fr;
+
       gap: 55px;
+
       padding-bottom: 55px;
     }
 
@@ -1157,12 +1475,15 @@
 
     .footer-brand p {
       color: rgba(255, 255, 255, 0.58);
+
       max-width: 320px;
+
       font-size: 0.9rem;
     }
 
     .footer-social {
       display: flex;
+
       gap: 10px;
       margin-top: 22px;
     }
@@ -1170,10 +1491,14 @@
     .social {
       width: 39px;
       height: 39px;
+
       border-radius: 12px;
+
       display: grid;
       place-items: center;
+
       background: rgba(255, 255, 255, 0.08);
+
       transition: background 0.2s ease;
     }
 
@@ -1188,13 +1513,16 @@
 
     .footer-links {
       list-style: none;
+
       display: grid;
       gap: 10px;
     }
 
     .footer-links a {
       color: rgba(255, 255, 255, 0.58);
+
       font-size: 0.88rem;
+
       transition: color 0.2s ease;
     }
 
@@ -1205,18 +1533,25 @@
     .footer-hours {
       display: grid;
       gap: 7px;
+
       font-size: 0.87rem;
+
       color: rgba(255, 255, 255, 0.58);
     }
 
     .footer-bottom {
       min-height: 70px;
+
       border-top: 1px solid rgba(255, 255, 255, 0.08);
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 20px;
+
       color: rgba(255, 255, 255, 0.48);
+
       font-size: 0.8rem;
     }
 
@@ -1225,13 +1560,13 @@
       gap: 20px;
     }
 
-    /* -----------------------------------------
-       Scroll animation
-    ----------------------------------------- */
+    /* ANIMATION */
 
     .reveal {
       opacity: 0;
+
       transform: translateY(25px);
+
       transition:
         opacity 0.7s ease,
         transform 0.7s ease;
@@ -1242,11 +1577,9 @@
       transform: translateY(0);
     }
 
-    /* -----------------------------------------
-       Responsive
-    ----------------------------------------- */
+    /* TABLET */
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1050px) {
       nav,
       .nav-actions .btn-outline {
         display: none;
@@ -1259,30 +1592,40 @@
 
       nav.mobile-active {
         display: block;
+
         position: fixed;
+
         left: 20px;
         right: 20px;
         top: 132px;
+
         padding: 25px;
+
         background: white;
+
         box-shadow: var(--shadow);
+
         border-radius: 20px;
       }
 
       nav.mobile-active ul {
         flex-direction: column;
         align-items: stretch;
+
         gap: 0;
       }
 
       nav.mobile-active a {
         display: block;
+
         padding: 13px;
+
         border-bottom: 1px solid var(--border);
       }
 
       .hero-grid,
       .about-grid,
+      .funding-grid,
       .day-grid,
       .contact-grid {
         grid-template-columns: 1fr;
@@ -1300,17 +1643,23 @@
         max-width: 620px;
       }
 
-      .room-grid {
+      .nursery-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .room-card:last-child {
+      .nursery-card:last-child {
         grid-column: 1 / -1;
+
         max-width: 55%;
+
         justify-self: center;
       }
 
       .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .staff-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -1351,6 +1700,8 @@
       }
     }
 
+    /* MOBILE */
+
     @media (max-width: 700px) {
       .container {
         width: min(calc(100% - 28px), var(--container));
@@ -1362,10 +1713,6 @@
 
       .topbar {
         display: none;
-      }
-
-      header {
-        top: 0;
       }
 
       .navbar {
@@ -1390,6 +1737,7 @@
 
       .hero-image-main {
         inset: 0 5px 40px 0;
+
         border-radius: 40px 40px 100px 40px;
       }
 
@@ -1404,11 +1752,13 @@
 
       .trust-grid {
         grid-template-columns: 1fr;
+
         padding: 15px;
       }
 
       .trust-item {
         justify-content: flex-start;
+
         border-right: 0;
         border-bottom: 1px solid var(--border);
       }
@@ -1438,19 +1788,26 @@
       .about-badge {
         width: 110px;
         height: 110px;
+
         font-size: 0.8rem;
       }
 
-      .room-grid,
+      .nursery-grid,
       .feature-grid,
+      .staff-grid,
       .testimonial-grid {
         grid-template-columns: 1fr;
       }
 
-      .room-card:last-child,
+      .nursery-card:last-child,
       .testimonial:last-child {
         grid-column: auto;
+
         max-width: 100%;
+      }
+
+      .staff-photo {
+        height: 360px;
       }
 
       .day-image {
@@ -1459,6 +1816,7 @@
 
       .cta {
         padding: 40px 27px;
+
         border-radius: 28px;
       }
 
@@ -1477,6 +1835,7 @@
 
       .footer-grid {
         grid-template-columns: 1fr 1fr;
+
         gap: 35px;
       }
 
@@ -1491,10 +1850,14 @@
       .footer-bottom {
         flex-direction: column;
         justify-content: center;
+
         padding: 20px 0;
+
         text-align: center;
       }
     }
+
+    /* SMALL MOBILE */
 
     @media (max-width: 470px) {
       h1 {
@@ -1539,8 +1902,14 @@
 
       .timeline-item {
         grid-template-columns: 60px 1fr;
+
         gap: 10px;
+
         padding-inline: 5px;
+      }
+
+      .funding-card {
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
@@ -1556,25 +1925,36 @@
 
 <body>
 
-  <!-- Top information bar -->
+  <!-- TOP BAR -->
+
   <div class="topbar">
     <div class="container topbar-inner">
-      <p>Creating happy little learners every day.</p>
+
+      <p>
+        Creating happy little learners every day.
+      </p>
 
       <div class="topbar-links">
-        <a href="tel:+441234567890">☎ 01234 567 890</a>
+
+        <a href="tel:+441234567890">
+          ☎ 01234 567 890
+        </a>
+
         <a href="mailto:hello@littleoaksnursery.co.uk">
           hello@littleoaksnursery.co.uk
         </a>
+
       </div>
     </div>
   </div>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
+
   <header>
     <div class="container navbar">
 
       <a href="#home" class="logo">
+
         <span class="logo-icon">
           <svg viewBox="0 0 24 24" fill="none">
             <path
@@ -1588,26 +1968,29 @@
         </span>
 
         Little Oaks
+
       </a>
 
       <nav id="mainNav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#rooms">Our Rooms</a></li>
-          <li><a href="#day">A Day With Us</a></li>
-          <li><a href="#parents">Parents</a></li>
+          <li><a href="#nurseries">Our Nurseries</a></li>
+          <li><a href="#funding">Nursery Funding</a></li>
+          <li><a href="#staff">Meet the Staff</a></li>
+          <li><a href="#tours">Tours</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
+
         <a href="#contact" class="btn btn-outline">
           Ask a Question
         </a>
 
-        <a href="#contact" class="btn btn-primary">
-          Book a Visit →
+        <a href="#tours" class="btn btn-primary">
+          Book a Tour →
         </a>
 
         <button
@@ -1617,15 +2000,17 @@
         >
           ☰
         </button>
-      </div>
 
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- Hero -->
+    <!-- HERO -->
+
     <section class="hero" id="home">
+
       <div class="container hero-grid">
 
         <div class="hero-content reveal">
@@ -1646,16 +2031,19 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">
+
+            <a href="#tours" class="btn btn-primary">
               Book a Nursery Tour →
             </a>
 
-            <a href="#about" class="btn btn-outline">
-              Discover Our Nursery
+            <a href="#nurseries" class="btn btn-outline">
+              Find Your Nursery
             </a>
+
           </div>
 
           <div class="hero-trust">
+
             <div class="avatar-stack">
               <div class="avatar">👩</div>
               <div class="avatar">👨</div>
@@ -1666,10 +2054,12 @@
             <div>
               <div class="stars">★★★★★</div>
               <strong>Loved by local families</strong>
-              <small>Trusted childcare with a personal touch</small>
+              <small>
+                Trusted childcare with a personal touch
+              </small>
             </div>
-          </div>
 
+          </div>
         </div>
 
         <div class="hero-image-wrap reveal">
@@ -1677,32 +2067,45 @@
           <div class="hero-image-main"></div>
 
           <div class="hero-card hero-card-top">
-            <div class="mini-icon">🌿</div>
+
+            <div class="mini-icon">
+              🌿
+            </div>
+
             <div>
               <strong>Outdoor learning</strong>
               <p>Exploring every day</p>
             </div>
+
           </div>
 
           <div class="hero-card hero-card-bottom">
-            <strong>Small moments. Big discoveries.</strong>
+
+            <strong>
+              Small moments. Big discoveries.
+            </strong>
+
             <p>
-              Learning through curiosity, creativity, play and meaningful
-              experiences.
+              Learning through curiosity, creativity,
+              play and meaningful experiences.
             </p>
+
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Trust -->
+    <!-- TRUST -->
+
     <div class="trust-strip">
       <div class="container">
+
         <div class="trust-grid reveal">
 
           <div class="trust-item">
             <span class="trust-icon">🛡️</span>
+
             <div>
               <strong>Safe & Secure</strong>
               <small>Our highest priority</small>
@@ -1711,6 +2114,7 @@
 
           <div class="trust-item">
             <span class="trust-icon">🌱</span>
+
             <div>
               <strong>EYFS Learning</strong>
               <small>Learning through play</small>
@@ -1719,6 +2123,7 @@
 
           <div class="trust-item">
             <span class="trust-icon">👩‍🏫</span>
+
             <div>
               <strong>Caring Team</strong>
               <small>Qualified practitioners</small>
@@ -1727,6 +2132,7 @@
 
           <div class="trust-item">
             <span class="trust-icon">🥕</span>
+
             <div>
               <strong>Healthy Meals</strong>
               <small>Fresh & nutritious</small>
@@ -1737,23 +2143,28 @@
       </div>
     </div>
 
-    <!-- About -->
+    <!-- ABOUT -->
+
     <section class="about" id="about">
+
       <div class="container about-grid">
 
         <div class="about-images reveal">
+
           <div class="about-main-img"></div>
           <div class="about-small-img"></div>
+
           <div class="about-badge">
             Helping little minds blossom
           </div>
+
         </div>
 
         <div class="about-content reveal">
 
           <span class="eyebrow">
             <span class="eyebrow-dot"></span>
-            About our nursery
+            About our nurseries
           </span>
 
           <h2>
@@ -1762,144 +2173,199 @@
 
           <p>
             At Little Oaks, we believe children learn best when they feel
-            happy, secure and free to explore. Our nursery has been created
-            around a simple idea: to provide children with the kind of
-            childhood we would want for our own families.
+            happy, secure and free to explore. Our nurseries have been
+            created around a simple idea: to provide children with the kind
+            of childhood we would want for our own families.
           </p>
 
           <div class="check-list">
 
             <div class="check-item">
+
               <span class="check">✓</span>
+
               <div>
                 <strong>Child-led learning</strong>
+
                 <p>
                   Experiences designed around each child's interests,
                   curiosity and individual development.
                 </p>
               </div>
+
             </div>
 
             <div class="check-item">
+
               <span class="check">✓</span>
+
               <div>
                 <strong>A nurturing environment</strong>
+
                 <p>
-                  Calm, welcoming spaces where children can build confidence
-                  and feel at home.
+                  Calm, welcoming spaces where children can build
+                  confidence and feel at home.
                 </p>
               </div>
+
             </div>
 
             <div class="check-item">
+
               <span class="check">✓</span>
+
               <div>
                 <strong>Strong parent partnerships</strong>
+
                 <p>
-                  We work closely with families to celebrate milestones and
-                  support every child's development.
+                  We work closely with families to celebrate milestones
+                  and support every child's development.
                 </p>
               </div>
+
             </div>
 
           </div>
 
-          <a href="#contact" class="btn btn-primary">
-            Come and Meet Us →
+          <a href="#nurseries" class="btn btn-primary">
+            Explore Our Nurseries →
           </a>
 
         </div>
       </div>
     </section>
 
-    <!-- Rooms -->
-    <section class="rooms" id="rooms">
+    <!-- OUR NURSERIES -->
+
+    <section class="nurseries" id="nurseries">
+
       <div class="container">
 
         <div class="section-heading center reveal">
 
           <span class="eyebrow">
             <span class="eyebrow-dot"></span>
-            Our nursery rooms
+            Our Nurseries
           </span>
 
           <h2>
-            Spaces designed around every stage.
+            Find a nursery that's right for your family.
           </h2>
 
           <p>
-            As children grow, their needs change. Our rooms provide
-            age-appropriate environments where children can confidently
-            explore the world around them.
+            Each of our nurseries provides a welcoming,
+            nurturing and inspiring environment where children
+            can learn, play and grow with confidence.
           </p>
 
         </div>
 
-        <div class="room-grid">
+        <div class="nursery-grid">
 
-          <article class="room-card reveal">
-            <div class="room-image">
+          <!-- NURSERY 1 -->
+
+          <article class="nursery-card reveal">
+
+            <div class="nursery-image">
+
               <img
-                src="https://images.unsplash.com/photo-1544776193-32d404ae608f?auto=format&fit=crop&w=900&q=80"
-                alt="Baby nursery room"
-              />
-              <span class="age">3 – 24 months</span>
+                src="https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=900&q=80"
+                alt="Little Oaks Canterbury Nursery"
+              >
+
+              <span class="location-tag">
+                Canterbury
+              </span>
+
             </div>
 
-            <div class="room-content">
-              <h3>Little Acorns</h3>
+            <div class="nursery-content">
+
+              <h3>
+                Little Oaks Canterbury
+              </h3>
+
               <p>
-                A calm and comforting space providing babies with warmth,
-                security, sensory discovery and plenty of cuddles.
+                A warm and welcoming nursery with beautiful
+                learning spaces, outdoor play areas and an
+                experienced early years team.
               </p>
 
-              <a href="#contact" class="room-link">
-                Find out more →
+              <a href="#tours" class="nursery-link">
+                View Nursery →
               </a>
+
             </div>
           </article>
 
-          <article class="room-card reveal">
-            <div class="room-image">
+          <!-- NURSERY 2 -->
+
+          <article class="nursery-card reveal">
+
+            <div class="nursery-image">
+
               <img
                 src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&q=80"
-                alt="Toddler activity room"
-              />
-              <span class="age">2 – 3 years</span>
+                alt="Little Oaks Maidstone Nursery"
+              >
+
+              <span class="location-tag">
+                Maidstone
+              </span>
+
             </div>
 
-            <div class="room-content">
-              <h3>Explorers</h3>
+            <div class="nursery-content">
+
+              <h3>
+                Little Oaks Maidstone
+              </h3>
+
               <p>
-                An exciting environment encouraging independence,
-                communication, movement, imagination and discovery.
+                A bright and engaging nursery designed around
+                exploration, creativity and learning through play.
               </p>
 
-              <a href="#contact" class="room-link">
-                Find out more →
+              <a href="#tours" class="nursery-link">
+                View Nursery →
               </a>
+
             </div>
           </article>
 
-          <article class="room-card reveal">
-            <div class="room-image">
+          <!-- NURSERY 3 -->
+
+          <article class="nursery-card reveal">
+
+            <div class="nursery-image">
+
               <img
                 src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80"
-                alt="Preschool children playing"
-              />
-              <span class="age">3 – 5 years</span>
+                alt="Little Oaks Sittingbourne Nursery"
+              >
+
+              <span class="location-tag">
+                Sittingbourne
+              </span>
+
             </div>
 
-            <div class="room-content">
-              <h3>Adventurers</h3>
+            <div class="nursery-content">
+
+              <h3>
+                Little Oaks Sittingbourne
+              </h3>
+
               <p>
-                Preparing preschool children for their next adventure through
-                creativity, problem solving, friendships and play.
+                A caring nursery community where children are
+                encouraged to discover new interests and build
+                confidence.
               </p>
 
-              <a href="#contact" class="room-link">
-                Find out more →
+              <a href="#tours" class="nursery-link">
+                View Nursery →
               </a>
+
             </div>
           </article>
 
@@ -1907,8 +2373,103 @@
       </div>
     </section>
 
-    <!-- Why us -->
+    <!-- FUNDING -->
+
+    <section class="funding" id="funding">
+
+      <div class="container funding-grid">
+
+        <div class="funding-content reveal">
+
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Nursery Funding
+          </span>
+
+          <h2>
+            Helping make childcare more affordable.
+          </h2>
+
+          <p>
+            Depending on your circumstances and your child's age,
+            you may be entitled to government support towards
+            childcare costs. Our friendly team can help explain
+            the options available and how funding can work with
+            your nursery place.
+          </p>
+
+          <br>
+
+          <a href="#contact" class="btn btn-primary">
+            Ask About Funding →
+          </a>
+
+        </div>
+
+        <div class="funding-cards reveal">
+
+          <div class="funding-card">
+
+            <div class="funding-icon">
+              🕐
+            </div>
+
+            <div>
+              <h3>Funded Childcare</h3>
+
+              <p>
+                Eligible families may be able to access
+                government-funded childcare hours towards
+                their nursery place.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="funding-card">
+
+            <div class="funding-icon">
+              £
+            </div>
+
+            <div>
+              <h3>Tax-Free Childcare</h3>
+
+              <p>
+                Eligible parents may be able to receive
+                government support towards their childcare
+                costs.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="funding-card">
+
+            <div class="funding-icon">
+              💬
+            </div>
+
+            <div>
+              <h3>Need Some Help?</h3>
+
+              <p>
+                Speak to our nursery team and we'll help explain
+                how funding can work alongside your chosen
+                sessions.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+
     <section class="features">
+
       <div class="container">
 
         <div class="section-heading reveal">
@@ -1923,8 +2484,9 @@
           </h2>
 
           <p>
-            We create meaningful experiences that help children develop the
-            confidence, skills and curiosity they need for the future.
+            We create meaningful experiences that help children
+            develop the confidence, skills and curiosity they
+            need for the future.
           </p>
 
         </div>
@@ -1932,47 +2494,308 @@
         <div class="feature-grid">
 
           <div class="feature-card reveal">
+
             <div class="feature-icon">🧠</div>
+
             <h3>Learning Through Play</h3>
+
             <p>
-              Purposeful play encourages communication, creativity, problem
-              solving and independence.
+              Purposeful play encourages communication,
+              creativity, problem solving and independence.
             </p>
+
           </div>
 
           <div class="feature-card reveal">
+
             <div class="feature-icon">🌳</div>
+
             <h3>Outdoor Adventures</h3>
+
             <p>
-              Children enjoy fresh air, physical activity and opportunities
-              to explore the natural world.
+              Children enjoy fresh air, physical activity and
+              opportunities to explore the natural world.
             </p>
+
           </div>
 
           <div class="feature-card reveal">
+
             <div class="feature-icon">🎨</div>
+
             <h3>Creative Expression</h3>
+
             <p>
-              From painting to music, stories and messy play, imagination is
-              encouraged every day.
+              From painting to music, stories and messy play,
+              imagination is encouraged every day.
             </p>
+
           </div>
 
           <div class="feature-card reveal">
+
             <div class="feature-icon">❤️</div>
+
             <h3>Individual Care</h3>
+
             <p>
-              Every child is unique. Our practitioners provide care and
-              learning tailored around individual needs.
+              Every child is unique. Our practitioners provide
+              care and learning tailored around individual needs.
             </p>
+
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Day at nursery -->
+    <!-- MEET THE STAFF -->
+
+    <section class="staff-section" id="staff">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Meet the Team
+          </span>
+
+          <h2>
+            The people who make our nurseries special.
+          </h2>
+
+          <p>
+            Our experienced early years practitioners are
+            passionate about creating a happy, safe and inspiring
+            environment for every child.
+          </p>
+
+        </div>
+
+        <div class="staff-grid">
+
+          <article class="staff-card reveal">
+
+            <div class="staff-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=85"
+                alt="Nursery Manager"
+              >
+
+            </div>
+
+            <div class="staff-content">
+
+              <h3>Sarah Williams</h3>
+
+              <span class="staff-role">
+                Nursery Manager
+              </span>
+
+              <p>
+                Sarah leads our nursery team and is passionate
+                about providing children with an exceptional
+                start to their early education.
+              </p>
+
+            </div>
+          </article>
+
+          <article class="staff-card reveal">
+
+            <div class="staff-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85"
+                alt="Deputy Nursery Manager"
+              >
+
+            </div>
+
+            <div class="staff-content">
+
+              <h3>Emily Taylor</h3>
+
+              <span class="staff-role">
+                Deputy Manager
+              </span>
+
+              <p>
+                Emily supports our children and practitioners
+                while helping ensure every day at nursery is
+                full of opportunities to learn.
+              </p>
+
+            </div>
+          </article>
+
+          <article class="staff-card reveal">
+
+            <div class="staff-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=85"
+                alt="Early Years Practitioner"
+              >
+
+            </div>
+
+            <div class="staff-content">
+
+              <h3>Lucy Green</h3>
+
+              <span class="staff-role">
+                Early Years Practitioner
+              </span>
+
+              <p>
+                Lucy loves creative activities, outdoor learning
+                and helping children discover new interests
+                through play.
+              </p>
+
+            </div>
+          </article>
+
+          <article class="staff-card reveal">
+
+            <div class="staff-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85"
+                alt="Early Years Practitioner"
+              >
+
+            </div>
+
+            <div class="staff-content">
+
+              <h3>James Carter</h3>
+
+              <span class="staff-role">
+                Early Years Practitioner
+              </span>
+
+              <p>
+                James enjoys helping children build their
+                confidence through exploration, physical
+                activity and imaginative play.
+              </p>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NURSERY TOURS -->
+
+    <section class="features" id="tours">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Nursery Tours
+          </span>
+
+          <h2>
+            Come and experience our nurseries for yourself.
+          </h2>
+
+          <p>
+            Choosing a nursery is an important decision.
+            We encourage families to visit, meet our team and
+            experience the nursery environment before choosing
+            their child's place.
+          </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+          <div class="feature-card reveal">
+
+            <div class="feature-icon">👋</div>
+
+            <h3>Meet Our Team</h3>
+
+            <p>
+              Meet the practitioners who will be caring for your
+              child and ask any questions you may have.
+            </p>
+
+          </div>
+
+          <div class="feature-card reveal">
+
+            <div class="feature-icon">🏡</div>
+
+            <h3>Explore the Nursery</h3>
+
+            <p>
+              See our playrooms, learning environments, sleep
+              areas and outdoor spaces for yourself.
+            </p>
+
+          </div>
+
+          <div class="feature-card reveal">
+
+            <div class="feature-icon">🧸</div>
+
+            <h3>Discover Nursery Life</h3>
+
+            <p>
+              Learn about our daily routines, activities,
+              meals, learning approach and how we help
+              children settle in.
+            </p>
+
+          </div>
+
+          <div class="feature-card reveal">
+
+            <div class="feature-icon">💬</div>
+
+            <h3>Ask Questions</h3>
+
+            <p>
+              Talk to us about availability, sessions, fees,
+              funding and anything else that's important to
+              your family.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            margin-top: 45px;
+          "
+        >
+
+          <a href="#contact" class="btn btn-light">
+            Book Your Nursery Tour →
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DAY AT NURSERY -->
+
     <section id="day">
+
       <div class="container day-grid">
 
         <div class="day-content reveal">
@@ -1987,86 +2810,127 @@
           </h2>
 
           <p>
-            Nursery life combines familiar routines with plenty of
-            opportunities for children to make choices, investigate ideas and
-            discover new interests.
+            Nursery life combines familiar routines with plenty
+            of opportunities for children to make choices,
+            investigate ideas and discover new interests.
           </p>
 
           <div class="timeline">
 
             <div class="timeline-item">
+
               <span class="time">7:30</span>
+
               <div>
                 <strong>Welcome & Breakfast</strong>
                 <p>A relaxed start to the day with friends.</p>
               </div>
+
             </div>
 
             <div class="timeline-item">
+
               <span class="time">9:00</span>
+
               <div>
                 <strong>Exploration & Activities</strong>
-                <p>Child-led learning, play and creative experiences.</p>
+
+                <p>
+                  Child-led learning, play and creative
+                  experiences.
+                </p>
               </div>
+
             </div>
 
             <div class="timeline-item">
+
               <span class="time">11:30</span>
+
               <div>
                 <strong>Lunch Time</strong>
                 <p>A nutritious meal shared together.</p>
               </div>
+
             </div>
 
             <div class="timeline-item">
+
               <span class="time">12:30</span>
+
               <div>
                 <strong>Rest & Quiet Time</strong>
-                <p>Sleep or calmer experiences depending on each child.</p>
+
+                <p>
+                  Sleep or calmer experiences depending on
+                  each child.
+                </p>
               </div>
+
             </div>
 
             <div class="timeline-item">
+
               <span class="time">2:00</span>
+
               <div>
                 <strong>Outdoor Adventures</strong>
-                <p>Fresh air, movement, nature and exploration.</p>
+
+                <p>
+                  Fresh air, movement, nature and exploration.
+                </p>
               </div>
+
             </div>
 
             <div class="timeline-item">
+
               <span class="time">4:30</span>
+
               <div>
                 <strong>Tea & Home Time</strong>
-                <p>A gentle finish to another busy day.</p>
+
+                <p>
+                  A gentle finish to another busy day.
+                </p>
               </div>
+
             </div>
 
           </div>
         </div>
 
         <div class="day-image reveal">
+
           <div class="day-image-card">
-            <strong>Following children's curiosity.</strong>
+
+            <strong>
+              Following children's curiosity.
+            </strong>
+
             <p>
-              Our daily routines provide consistency while allowing plenty of
-              flexibility for spontaneous learning and discovery.
+              Our daily routines provide consistency while
+              allowing plenty of flexibility for spontaneous
+              learning and discovery.
             </p>
+
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- REVIEWS -->
+
     <section class="testimonials" id="parents">
+
       <div class="container">
 
         <div class="section-heading center reveal">
 
           <span class="eyebrow">
             <span class="eyebrow-dot"></span>
-            Parent feedback
+            Parent Feedback
           </span>
 
           <h2>
@@ -2074,8 +2938,8 @@
           </h2>
 
           <p>
-            The relationships we build with children and their families are
-            at the heart of everything we do.
+            The relationships we build with children and their
+            families are at the heart of everything we do.
           </p>
 
         </div>
@@ -2083,59 +2947,94 @@
         <div class="testimonial-grid">
 
           <article class="testimonial reveal">
-            <div class="stars">★★★★★</div>
-            <div class="quote-mark">“</div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <div class="quote-mark">
+              “
+            </div>
 
             <p>
-              Our daughter absolutely loves coming to nursery. The staff know
-              her so well and we can see how much her confidence has grown
-              since starting.
+              Our daughter absolutely loves coming to nursery.
+              The staff know her so well and we can see how much
+              her confidence has grown since starting.
             </p>
 
             <div class="parent">
-              <div class="parent-avatar">👩</div>
+
+              <div class="parent-avatar">
+                👩
+              </div>
+
               <div>
                 <strong>Sarah M.</strong>
                 <small>Parent of a preschool child</small>
               </div>
+
             </div>
           </article>
 
           <article class="testimonial reveal">
-            <div class="stars">★★★★★</div>
-            <div class="quote-mark">“</div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <div class="quote-mark">
+              “
+            </div>
 
             <p>
-              Choosing childcare was daunting, but the team immediately made
-              us feel comfortable. The communication is brilliant and our son
-              runs through the doors every morning.
+              Choosing childcare was daunting, but the team
+              immediately made us feel comfortable. The
+              communication is brilliant and our son runs
+              through the doors every morning.
             </p>
 
             <div class="parent">
-              <div class="parent-avatar">👨</div>
+
+              <div class="parent-avatar">
+                👨
+              </div>
+
               <div>
                 <strong>James R.</strong>
                 <small>Parent of a toddler</small>
               </div>
+
             </div>
           </article>
 
           <article class="testimonial reveal">
-            <div class="stars">★★★★★</div>
-            <div class="quote-mark">“</div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <div class="quote-mark">
+              “
+            </div>
 
             <p>
-              It feels like a second home. The practitioners genuinely care
-              about each child and always make time to tell us about the
-              little moments from their day.
+              It feels like a second home. The practitioners
+              genuinely care about each child and always make
+              time to tell us about the little moments from
+              their day.
             </p>
 
             <div class="parent">
-              <div class="parent-avatar">👩</div>
+
+              <div class="parent-avatar">
+                👩
+              </div>
+
               <div>
                 <strong>Emily T.</strong>
                 <small>Parent of two children</small>
               </div>
+
             </div>
           </article>
 
@@ -2144,45 +3043,58 @@
     </section>
 
     <!-- CTA -->
+
     <section class="cta-section">
+
       <div class="container">
 
         <div class="cta reveal">
 
           <div>
+
             <h2>
-              Choosing a nursery is a big decision. Come and see us.
+              Choosing a nursery is a big decision.
+              Come and see us.
             </h2>
 
             <p>
-              Meet our team, explore our rooms and discover what makes Little
-              Oaks such a special place for children to begin their journey.
+              Meet our team, explore our nursery spaces and
+              discover what makes Little Oaks such a special
+              place for children to begin their journey.
             </p>
+
           </div>
 
           <div class="cta-buttons">
+
             <a href="#contact" class="btn btn-primary">
-              Book a Visit →
+              Book a Tour →
             </a>
 
-            <a href="tel:+441234567890" class="btn btn-light">
+            <a
+              href="tel:+441234567890"
+              class="btn btn-light"
+            >
               Call 01234 567 890
             </a>
+
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
+
     <section id="contact">
+
       <div class="container contact-grid">
 
         <div class="contact-info reveal">
 
           <span class="eyebrow">
             <span class="eyebrow-dot"></span>
-            Contact us
+            Contact Us
           </span>
 
           <h2>
@@ -2190,69 +3102,107 @@
           </h2>
 
           <p>
-            If you would like to learn more about Little Oaks, check
-            availability or arrange a nursery visit, get in touch with our
-            friendly team.
+            If you would like to learn more about Little Oaks,
+            check availability, ask about funding or arrange a
+            nursery tour, get in touch with our friendly team.
           </p>
 
           <div class="contact-details">
 
             <div class="contact-item">
-              <div class="contact-icon">📍</div>
+
+              <div class="contact-icon">
+                📍
+              </div>
+
               <div>
-                <strong>Visit us</strong>
+                <strong>Our Nurseries</strong>
+
                 <p>
-                  12 Woodland Lane,<br>
-                  Canterbury, Kent, CT1 1AA
+                  Multiple nursery locations available.
+                  Select your preferred nursery when making
+                  an enquiry.
                 </p>
               </div>
+
             </div>
 
             <div class="contact-item">
-              <div class="contact-icon">☎️</div>
+
+              <div class="contact-icon">
+                ☎️
+              </div>
+
               <div>
                 <strong>Call us</strong>
+
                 <a href="tel:+441234567890">
                   01234 567 890
                 </a>
               </div>
+
             </div>
 
             <div class="contact-item">
-              <div class="contact-icon">✉️</div>
+
+              <div class="contact-icon">
+                ✉️
+              </div>
+
               <div>
                 <strong>Email us</strong>
+
                 <a href="mailto:hello@littleoaksnursery.co.uk">
                   hello@littleoaksnursery.co.uk
                 </a>
               </div>
+
             </div>
 
             <div class="contact-item">
-              <div class="contact-icon">🕒</div>
+
+              <div class="contact-icon">
+                🕒
+              </div>
+
               <div>
                 <strong>Opening hours</strong>
+
                 <p>
                   Monday – Friday<br>
                   7:30am – 6:00pm
                 </p>
               </div>
+
             </div>
 
           </div>
         </div>
 
-        <form class="contact-form reveal" id="enquiryForm">
+        <!-- ENQUIRY FORM -->
 
-          <h3>Make an enquiry</h3>
+        <form
+          class="contact-form reveal"
+          id="enquiryForm"
+        >
+
+          <h3>
+            Make an enquiry
+          </h3>
+
           <p>
-            Complete the form and a member of our team will get back to you.
+            Complete the form and a member of our team will
+            get back to you.
           </p>
 
           <div class="form-row">
 
             <div class="form-group">
-              <label for="parentName">Your name</label>
+
+              <label for="parentName">
+                Your name
+              </label>
+
               <input
                 id="parentName"
                 name="parentName"
@@ -2260,11 +3210,16 @@
                 type="text"
                 placeholder="e.g. Sarah Smith"
                 required
-              />
+              >
+
             </div>
 
             <div class="form-group">
-              <label for="email">Email address</label>
+
+              <label for="email">
+                Email address
+              </label>
+
               <input
                 id="email"
                 name="email"
@@ -2272,7 +3227,8 @@
                 type="email"
                 placeholder="you@example.com"
                 required
-              />
+              >
+
             </div>
 
           </div>
@@ -2280,52 +3236,126 @@
           <div class="form-row">
 
             <div class="form-group">
-              <label for="phone">Telephone</label>
+
+              <label for="phone">
+                Telephone
+              </label>
+
               <input
                 id="phone"
                 name="phone"
                 class="form-control"
                 type="tel"
                 placeholder="07123 456789"
-              />
+              >
+
             </div>
 
             <div class="form-group">
-              <label for="childAge">Child's age</label>
+
+              <label for="childAge">
+                Child's age
+              </label>
+
               <select
                 id="childAge"
                 name="childAge"
                 class="form-control"
               >
-                <option value="">Select age</option>
+
+                <option value="">
+                  Select age
+                </option>
+
                 <option>Under 1</option>
                 <option>1 year</option>
                 <option>2 years</option>
                 <option>3 years</option>
                 <option>4 years</option>
+
               </select>
+
             </div>
 
           </div>
 
           <div class="form-group">
-            <label for="subject">How can we help?</label>
+
+            <label for="nursery">
+              Preferred nursery
+            </label>
+
+            <select
+              id="nursery"
+              name="nursery"
+              class="form-control"
+            >
+
+              <option value="">
+                Select a nursery
+              </option>
+
+              <option>
+                Little Oaks Canterbury
+              </option>
+
+              <option>
+                Little Oaks Maidstone
+              </option>
+
+              <option>
+                Little Oaks Sittingbourne
+              </option>
+
+              <option>
+                I'm not sure yet
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="subject">
+              How can we help?
+            </label>
 
             <select
               id="subject"
               name="subject"
               class="form-control"
             >
-              <option>I'd like to book a nursery tour</option>
-              <option>I'd like to check availability</option>
-              <option>I have a question about fees</option>
-              <option>I have a question about funded childcare</option>
-              <option>General enquiry</option>
+
+              <option>
+                I'd like to book a nursery tour
+              </option>
+
+              <option>
+                I'd like to check nursery availability
+              </option>
+
+              <option>
+                I have a question about nursery funding
+              </option>
+
+              <option>
+                I have a question about fees
+              </option>
+
+              <option>
+                I have a general enquiry
+              </option>
+
             </select>
+
           </div>
 
           <div class="form-group">
-            <label for="message">Your message</label>
+
+            <label for="message">
+              Your message
+            </label>
 
             <textarea
               id="message"
@@ -2333,6 +3363,7 @@
               class="form-control"
               placeholder="Tell us a little about what you're looking for..."
             ></textarea>
+
           </div>
 
           <button
@@ -2342,7 +3373,10 @@
             Send Enquiry →
           </button>
 
-          <div class="success-message" id="successMessage">
+          <div
+            class="success-message"
+            id="successMessage"
+          >
             Thank you! Your enquiry has been received.
           </div>
 
@@ -2353,7 +3387,8 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
+
   <footer>
 
     <div class="container footer-grid">
@@ -2361,8 +3396,13 @@
       <div class="footer-brand">
 
         <a href="#home" class="logo">
+
           <span class="logo-icon">
-            <svg viewBox="0 0 24 24" fill="none">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            >
               <path
                 d="M12 21V10M12 10C12 6.5 9.6 4.5 6 4c.1 3.9 2.1 6 6 6Zm0 3c0-3.6 2.4-5.7 6-6-.1 3.8-2.1 6-6 6Z"
                 stroke="currentColor"
@@ -2371,58 +3411,159 @@
                 stroke-linejoin="round"
               />
             </svg>
+
           </span>
 
           Little Oaks
+
         </a>
 
         <p>
-          Providing caring, inspiring and high-quality early years education
-          where children can learn, explore and grow.
+          Providing caring, inspiring and high-quality early
+          years education where children can learn, explore
+          and grow.
         </p>
 
         <div class="footer-social">
-          <a href="#" class="social" aria-label="Facebook">f</a>
-          <a href="#" class="social" aria-label="Instagram">◎</a>
+
+          <a
+            href="#"
+            class="social"
+            aria-label="Facebook"
+          >
+            f
+          </a>
+
+          <a
+            href="#"
+            class="social"
+            aria-label="Instagram"
+          >
+            ◎
+          </a>
+
         </div>
 
       </div>
 
       <div>
-        <h4>Nursery</h4>
+
+        <h4>
+          Nurseries
+        </h4>
 
         <ul class="footer-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#rooms">Our Rooms</a></li>
-          <li><a href="#day">A Day With Us</a></li>
-          <li><a href="#parents">Parent Reviews</a></li>
-          <li><a href="#contact">Book a Visit</a></li>
+
+          <li>
+            <a href="#nurseries">
+              Our Nurseries
+            </a>
+          </li>
+
+          <li>
+            <a href="#about">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="#staff">
+              Meet the Staff
+            </a>
+          </li>
+
+          <li>
+            <a href="#tours">
+              Nursery Tours
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              Contact Us
+            </a>
+          </li>
+
         </ul>
+
       </div>
 
       <div>
-        <h4>Parents</h4>
+
+        <h4>
+          Parents
+        </h4>
 
         <ul class="footer-links">
-          <li><a href="#">Fees & Funding</a></li>
-          <li><a href="#">Settling In</a></li>
-          <li><a href="#">Nutrition</a></li>
-          <li><a href="#">Policies</a></li>
-          <li><a href="#">Parent Information</a></li>
+
+          <li>
+            <a href="#funding">
+              Nursery Funding
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Fees
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Settling In
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Nutrition
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Policies
+            </a>
+          </li>
+
         </ul>
+
       </div>
 
       <div>
-        <h4>Opening Hours</h4>
+
+        <h4>
+          Opening Hours
+        </h4>
 
         <div class="footer-hours">
-          <span>Monday: 7:30am – 6:00pm</span>
-          <span>Tuesday: 7:30am – 6:00pm</span>
-          <span>Wednesday: 7:30am – 6:00pm</span>
-          <span>Thursday: 7:30am – 6:00pm</span>
-          <span>Friday: 7:30am – 6:00pm</span>
-          <span>Saturday & Sunday: Closed</span>
+
+          <span>
+            Monday: 7:30am – 6:00pm
+          </span>
+
+          <span>
+            Tuesday: 7:30am – 6:00pm
+          </span>
+
+          <span>
+            Wednesday: 7:30am – 6:00pm
+          </span>
+
+          <span>
+            Thursday: 7:30am – 6:00pm
+          </span>
+
+          <span>
+            Friday: 7:30am – 6:00pm
+          </span>
+
+          <span>
+            Saturday & Sunday: Closed
+          </span>
+
         </div>
+
       </div>
 
     </div>
@@ -2430,13 +3571,25 @@
     <div class="container footer-bottom">
 
       <span>
-        © <span id="year"></span> Little Oaks Nursery. All rights reserved.
+        © <span id="year"></span>
+        Little Oaks Nurseries.
+        All rights reserved.
       </span>
 
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Policy</a>
-        <a href="#">Terms</a>
+
+        <a href="#">
+          Privacy Policy
+        </a>
+
+        <a href="#">
+          Cookie Policy
+        </a>
+
+        <a href="#">
+          Terms
+        </a>
+
       </div>
 
     </div>
@@ -2444,54 +3597,64 @@
   </footer>
 
   <script>
-    /* ------------------------------------------------
-       Current year
-    ------------------------------------------------ */
+
+    /* CURRENT YEAR */
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
 
-    /* ------------------------------------------------
-       Mobile navigation
-    ------------------------------------------------ */
+    /* MOBILE NAVIGATION */
 
-    const menuButton = document.getElementById("menuButton");
-    const mainNav = document.getElementById("mainNav");
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const mainNav =
+      document.getElementById("mainNav");
+
 
     menuButton.addEventListener("click", () => {
 
       mainNav.classList.toggle("mobile-active");
 
-      const open = mainNav.classList.contains("mobile-active");
+      const open =
+        mainNav.classList.contains("mobile-active");
 
-      menuButton.textContent = open ? "✕" : "☰";
+      menuButton.textContent =
+        open ? "✕" : "☰";
 
-      document.body.classList.toggle("menu-open", open);
+      document.body.classList.toggle(
+        "menu-open",
+        open
+      );
 
     });
 
 
-    /* Close mobile menu after selecting a link */
+    /* CLOSE MENU AFTER LINK CLICK */
 
-    document.querySelectorAll("#mainNav a").forEach(link => {
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(link => {
 
-      link.addEventListener("click", () => {
+        link.addEventListener("click", () => {
 
-        mainNav.classList.remove("mobile-active");
+          mainNav.classList.remove(
+            "mobile-active"
+          );
 
-        menuButton.textContent = "☰";
+          menuButton.textContent = "☰";
 
-        document.body.classList.remove("menu-open");
+          document.body.classList.remove(
+            "menu-open"
+          );
+
+        });
 
       });
 
-    });
 
-
-    /* ------------------------------------------------
-       Enquiry form demo
-    ------------------------------------------------ */
+    /* DEMO ENQUIRY FORM */
 
     const enquiryForm =
       document.getElementById("enquiryForm");
@@ -2499,48 +3662,64 @@
     const successMessage =
       document.getElementById("successMessage");
 
-    enquiryForm.addEventListener("submit", function(event) {
 
-      event.preventDefault();
+    enquiryForm.addEventListener(
+      "submit",
+      function(event) {
 
-      successMessage.style.display = "block";
+        event.preventDefault();
 
-      enquiryForm.reset();
+        successMessage.style.display =
+          "block";
 
-      setTimeout(() => {
-        successMessage.style.display = "none";
-      }, 5000);
+        enquiryForm.reset();
 
-    });
+        setTimeout(() => {
+
+          successMessage.style.display =
+            "none";
+
+        }, 5000);
+
+      }
+    );
 
 
-    /* ------------------------------------------------
-       Scroll reveal animations
-    ------------------------------------------------ */
+    /* SCROLL ANIMATIONS */
 
     const revealElements =
       document.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver(
-      entries => {
 
-        entries.forEach(entry => {
+    const observer =
+      new IntersectionObserver(
 
-          if (entry.isIntersecting) {
+        entries => {
 
-            entry.target.classList.add("visible");
+          entries.forEach(entry => {
 
-            observer.unobserve(entry.target);
+            if (entry.isIntersecting) {
 
-          }
+              entry.target.classList.add(
+                "visible"
+              );
 
-        });
+              observer.unobserve(
+                entry.target
+              );
 
-      },
-      {
-        threshold: 0.12
-      }
-    );
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.12
+        }
+
+      );
+
 
     revealElements.forEach(element => {
       observer.observe(element);
